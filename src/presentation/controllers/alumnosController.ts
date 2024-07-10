@@ -50,7 +50,7 @@ export class AlumnosController {
                 [uuidv4(), nombre, ap_paterno, ap_materno, fec_nacimiento, genero, email, num_exterior, num_interior, calle, colonia, cp, municipio, estado, telefono, carrera]
             );
 
-            return res.status(200).json({ message: 'Alumno creado correctamente' });
+            return res.status(200).json({ message: 'Alumno agregado correctamente' });
         } catch (error) {
             return res.status(500).json({ error });
         }
